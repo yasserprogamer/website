@@ -45,6 +45,7 @@ nav img {
 .accomplishments,
 .YouTube {
     display: flex;
+    flex-wrap: wrap-reverse;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -53,6 +54,7 @@ nav img {
 .header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     padding: 40px 30px;
     background-color: blueviolet;
     color: white;
@@ -111,6 +113,12 @@ nav img {
     border: 1px solid white;
     border-width: 1px 0 1px 0;
     padding: 48px 36px;
+}
+
+@media (orientation: portrait) {
+    .about {
+        flex-direction: column;
+    }
 }
 
 .about .about-text {
@@ -174,10 +182,6 @@ nav img {
 
 .accomplishments {
     background-color: blue;
-}
-
-.YouTube {
-    background-color: red;
 }
 .header p {
     font-size: 2vw;
@@ -352,6 +356,8 @@ button.learn-about-me-button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: red;
+    flex-wrap: wrap-reverse;
 }
 
 .YouTube h1 {
@@ -360,13 +366,19 @@ button.learn-about-me-button {
 
 .YouTube p {
     font-size: 22px;
-    text-align: center;
     padding: 16px 18px;
 }
 
 .Youtube-Text {
     text-align: right;
 }
+
+@media (orientation: portrait) {
+    .Youtube-Text {
+        text-align: center;
+    }
+}
+
 
 .channels {
     display: flex;
@@ -400,7 +412,7 @@ button.learn-about-me-button {
 }
 
 .channel-info h3 {
-    font-size: 38px;
+    font-size: 32px;
     padding: 4px 0;
 }
 
