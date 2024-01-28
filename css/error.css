@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Minecraft;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1018;
+    height: 100vh;
+}
+
+.ErrorBox {
+    background-color: #181628;
+    padding: 24px 20px;
+    border-radius: 18px;
+    width: 65%;
+
+    animation-name: BoxRevealing;
+    animation-duration: 1.4s;
+    animation-delay: 0.5s;
+
+    text-align: center;
+}
+
+.ErrorBox h1 {
+    font-size: 48px;
+}
+
+.ErrorBox p {
+    font-size: 22px;
+    padding: 8px 0;
+}
+
+@keyframes BoxRevealing {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+    }
+}
