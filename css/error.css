@@ -1,8 +1,10 @@
+@import url("https://fontlibrary.org//face/minecraftia");
+
 * {
     margin: 0;
     padding: 0;
     color: white;
-    font-family: Minecraft;
+    font-family: 'MinecraftiaRegular';
     box-sizing: border-box;
 }
 
